@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Student Dashboard</h3>
+{% if not student %}
+  <div class="alert alert-warning">No student record found. Ensure you entered a valid Student ID at login.</div>
+{% else %}
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{ student['name'] }}</h5>
+      <p class="card-text"><strong>ID:</strong> {{ student['student_id'] }}</p>
+      <p class="card-text"><strong>Course:</strong> {{ student['course'] or '-' }}</p>
+      <p class="card-text"><strong>Marks:</strong> {{ student['marks'] or '-' }}</p>
+      <p class="card-text"><strong>Email:</strong> {{ student['email'] or '-' }}</p>
+    </div>
+  </div>
+{% endif %}
+{% endblock %}

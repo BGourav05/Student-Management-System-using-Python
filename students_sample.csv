@@ -1,0 +1,11 @@
+student_id,name,email,course,marks
+2023STD001,John Doe,john.doe@example.com,Math,85
+2023STD002,Jane Smith,jane.smith@example.com,Science,92
+2023STD003,Ali Khan,ali.khan@example.com,Computer Science,78
+2023STD004,Maria Garcia,maria.garcia@example.com,Math,88
+2023STD005,Chen Wei,chen.wei@example.com,Science,91
+2023STD006,Fatima Noor,fatima.noor@example.com,English,73
+2023STD007,Liam Brown,liam.brown@example.com,History,80
+2023STD008,Emma Wilson,emma.wilson@example.com,Computer Science,95
+2023STD009,Noah Davis,noah.davis@example.com,Math,67
+2023STD010,Olivia Martinez,olivia.martinez@example.com,Science,89

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Teacher Dashboard — Course: {{ course }}</h3>
+{% if students|length == 0 %}
+  <div class="alert alert-secondary">No students assigned to your course.</div>
+{% else %}
+  <ul class="list-group">
+    {% for s in students %}
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div>
+          <strong>{{ s['name'] }}</strong><br>
+          <small class="text-muted">{{ s['student_id'] }} — {{ s['course'] }}</small>
+        </div>
+        <div>
+          <a class="btn btn-sm btn-outline-secondary" href="{{ url_for('edit', stu_id=s['id']) }}">Edit</a>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+{% endblock %}
